@@ -29,15 +29,15 @@ void usage() {
 int handle_option(char *arg) {
 
     if (!strcmp(arg,"--static")) {
-        predictorType= STATIC;
+        predictor_type= STATIC;
     } else if (!strncmp(arg,"--gshare:",9)) {
-        predictorType= GSHARE;
-        sscanf(arg+9,"%d", &globalHistoryBits);
+        predictor_type= GSHARE;
+        sscanf(arg+9,"%d", &global_history_bits);
     } else if (!strncmp(arg,"--tournament:",13)) {
-        predictorType= TOURNAMENT;
-        sscanf(arg+13,"%d:%d:%d", &globalHistoryBits, &localHistoryBits, &pcIndexBits);
+        predictor_type= TOURNAMENT;
+        sscanf(arg+13,"%d:%d:%d", &global_history_bits, &local_history_bits, &pc_index_bits);
     } else if (!strncmp(arg,"--custom:", 9)) {
-        predictorType= CUSTOM;
+        predictor_type= CUSTOM;
         sscanf(arg+9,"%d:%d:%d:%d", &weight_bit_limit, &num_weights_bits, &perceptron_table_length_bits, &perceptron_theta);
     } else if (!strcmp(arg,"--verbose")) {
         verbosity = 1;
@@ -64,7 +64,7 @@ int read_branch(uint32_t *pc, uint8_t *outcome) {
 int main(int argc, char *argv[]) {
    // Set defaults
     stream = stdin;
-    predictorType = STATIC;
+    predictor_type = STATIC;
     verbosity = 0;
 
     // Process cmdline Arguments

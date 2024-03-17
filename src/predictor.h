@@ -25,10 +25,10 @@ extern const char *predictorNames[];
 #define STRONG_TAKEN     3
 
 // Predictor configs
-extern int globalHistoryBits;
-extern int localHistoryBits;
-extern int pcIndexBits;
-extern int predictorType;
+extern int global_history_bits;
+extern int local_history_bits;
+extern int pc_index_bits;
+extern int predictor_type;
 extern int verbosity;
 
 extern int perceptron_table_length_bits; 

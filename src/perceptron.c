@@ -1,4 +1,5 @@
 #include "predictor.h"
+#include <string.h>
 
 //Data Structures for perceptron
 int8_t weight_limit_lower;
