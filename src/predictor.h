@@ -31,6 +31,11 @@ extern int pcIndexBits;
 extern int predictorType;
 extern int verbosity;
 
+extern int perceptron_table_length_bits; 
+extern int num_weights_bits; 
+extern int weight_bit_limit;
+extern int perceptron_theta;
+
 void initializePredictor();
 uint8_t makePrediction(uint32_t pc);
 void trainPredictor(uint32_t pc, uint8_t outcome);

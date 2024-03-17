@@ -18,7 +18,7 @@ const char *email2       = "";
 //------------------------------------//
 
 // Handy Global for use in output routines
-const char *bpName[4] = { "Static", "Gshare",
+const char *predictorNames[4] = { "Static", "Gshare",
                           "Tournament", "Custom" };
 
 //------------------------------------//
@@ -27,16 +27,18 @@ const char *bpName[4] = { "Static", "Gshare",
 
 // Initialize the predictor
 //
-int bpType;       // Branch Prediction Type
+int globalHistoryBits;
+int localHistoryBits;
+int pcIndexBits;
+int predictorType;       // Branch Prediction Type
+int verbosity;
 
-//remove
-int verbose;
 
 void
-init_predictor()
+initializePredictor()
 {
   // Call init based on prediction algorithm
-  switch (bpType) {
+  switch (predictorType) {
     case STATIC: break;
     case GSHARE: init_gshare(); break;
     case TOURNAMENT: init_tournament(); break;
@@ -51,18 +53,18 @@ init_predictor()
 // indicates a prediction of not taken
 //
 uint8_t
-make_prediction(uint32_t pc)
+makePrediction(uint32_t pc)
 {
   // Make a prediction based on the bpType
-  switch (bpType) {
+  switch (predictorType) {
     case STATIC:
       return TAKEN; break;
     case GSHARE: 
-      return fetch_gshare_prediction(pc); break;
+      return get_gshare_pred(pc); break;
     case TOURNAMENT: 
-      return fetch_tournament_prediction(pc); break;
+      return get_tournament_pred(pc); break;
     case CUSTOM: 
-      return fetch_perceptron_prediction(pc); break;
+      return get_perceptron_pred(pc); break;
     default:
       break;
   }
@@ -76,10 +78,10 @@ make_prediction(uint32_t pc)
 // indicates that the branch was not taken)
 //
 void
-train_predictor(uint32_t pc, uint8_t outcome)
+trainPredictor(uint32_t pc, uint8_t outcome)
 {
   // Call trainer based on prediction algorithm
-  switch (bpType) {
+  switch (predictorType) {
     case STATIC: break;
     case GSHARE: train_gshare(pc, outcome); break;
     case TOURNAMENT: train_tournament(pc, outcome); break;

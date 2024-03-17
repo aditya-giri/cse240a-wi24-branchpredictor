@@ -29,18 +29,18 @@ void usage() {
 int handle_option(char *arg) {
 
     if (!strcmp(arg,"--static")) {
-        bpType = STATIC;
+        predictorType= STATIC;
     } else if (!strncmp(arg,"--gshare:",9)) {
-        bpType = GSHARE;
-        sscanf(arg+9,"%d", &ghistoryBits);
+        predictorType= GSHARE;
+        sscanf(arg+9,"%d", &globalHistoryBits);
     } else if (!strncmp(arg,"--tournament:",13)) {
-        bpType = TOURNAMENT;
-        sscanf(arg+13,"%d:%d:%d", &ghistoryBits, &lhistoryBits, &pcIndexBits);
+        predictorType= TOURNAMENT;
+        sscanf(arg+13,"%d:%d:%d", &globalHistoryBits, &localHistoryBits, &pcIndexBits);
     } else if (!strncmp(arg,"--custom:", 9)) {
-        bpType = CUSTOM;
+        predictorType= CUSTOM;
         sscanf(arg+9,"%d:%d:%d:%d", &weight_bit_limit, &num_weights_bits, &perceptron_table_length_bits, &perceptron_theta);
     } else if (!strcmp(arg,"--verbose")) {
-        verbose = 1;
+        verbosity = 1;
     } else {
         return 0;
     }
@@ -64,8 +64,8 @@ int read_branch(uint32_t *pc, uint8_t *outcome) {
 int main(int argc, char *argv[]) {
    // Set defaults
     stream = stdin;
-    bpType = STATIC;
-    verbose = 0;
+    predictorType = STATIC;
+    verbosity = 0;
 
     // Process cmdline Arguments
     for (int i = 1; i < argc; ++i) {
@@ -85,7 +85,7 @@ int main(int argc, char *argv[]) {
     }
 
     // Initialize the predictor
-    init_predictor();
+    initializePredictor();
 
     uint32_t num_branches = 0;
     uint32_t mispredictions = 0;
@@ -97,16 +97,16 @@ int main(int argc, char *argv[]) {
         num_branches++;
 
         // Make a prediction and compare with actual outcome
-        uint8_t prediction = make_prediction(pc);
+        uint8_t prediction = makePrediction(pc);
         if (prediction != outcome) {
         mispredictions++;
         }
-        if (verbose != 0) {
+        if (verbosity != 0) {
         printf ("%d\n", prediction);
         }
 
         // Train the predictor
-        train_predictor(pc, outcome);
+        trainPredictor(pc, outcome);
     }
 
     // Print out the mispredict statistics
