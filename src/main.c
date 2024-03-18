@@ -36,9 +36,14 @@ int handle_option(char *arg) {
     } else if (!strncmp(arg,"--tournament:",13)) {
         predictor_type= TOURNAMENT;
         sscanf(arg+13,"%d:%d:%d", &global_history_bits, &local_history_bits, &pc_index_bits);
-    } else if (!strncmp(arg,"--custom:", 9)) {
+    } else if (!strncmp(arg,"--custom", 8)) {
         predictor_type= CUSTOM;
-        sscanf(arg+9,"%d:%d:%d:%d", &weight_bit_limit, &num_weights_bits, &perceptron_table_length_bits, &perceptron_theta);
+        if (strlen(arg) > 8) {
+            sscanf(arg+8,"%d", &perceptron_theta);
+            // printf("theta in handle: %d", perceptron_theta);
+        } else {
+            perceptron_theta = DEFAULT_PERCEPTRON_THETA;
+        }
     } else if (!strcmp(arg,"--verbose")) {
         verbosity = 1;
     } else {

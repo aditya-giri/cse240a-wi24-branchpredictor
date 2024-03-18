@@ -11,6 +11,7 @@
 #define GSHARE      1
 #define TOURNAMENT  2
 #define CUSTOM      3
+#define DEFAULT_PERCEPTRON_THETA -99
 
 extern const char *predictorNames[];
 
