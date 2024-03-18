@@ -31,7 +31,7 @@ bunzip2 -kc ../traces/fp_2.bz2 | ./predictor --gshare:13 >> res.txt
 echo "Tournament:" >> res.txt
 bunzip2 -kc ../traces/fp_2.bz2 | ./predictor --tournament:9:10:10 >> res.txt
 echo "Custom:" >> res.txt
-bunzip2 -kc ../traces/fp_2.bz2 | ./predictor --custom>> res.txt
+bunzip2 -kc ../traces/fp_2.bz2 | ./predictor --custom >> res.txt
 echo "======" >> res.txt
 echo "mm_1:" >> res.txt
 echo "Gshare:" >> res.txt
