@@ -32,7 +32,7 @@ int local_history_bits;
 int pc_index_bits;
 int predictor_type;       // Branch Prediction Type
 int verbosity;
-
+int perceptron_theta;
 
 void
 initializePredictor()
