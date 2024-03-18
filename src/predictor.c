@@ -9,9 +9,9 @@ const char *studentName1 = "Shyam Renjith";
 const char *studentID1   = "A59020323";
 const char *email1       = "srenjith@ucsd.edu";
 
-const char *studentName2 = "";
-const char *studentID2   = "";
-const char *email2       = "";
+const char *studentName2 = "Aditya Giridharan";
+const char *studentID2   = "A59012233";
+const char *email2       = "agiridharan@ucsd.edu";
 
 //------------------------------------//
 //      Predictor Configuration       //
@@ -27,10 +27,10 @@ const char *predictorNames[4] = { "Static", "Gshare",
 
 // Initialize the predictor
 //
-int globalHistoryBits;
-int localHistoryBits;
-int pcIndexBits;
-int predictorType;       // Branch Prediction Type
+int global_history_bits;
+int local_history_bits;
+int pc_index_bits;
+int predictor_type;       // Branch Prediction Type
 int verbosity;
 
 
@@ -38,7 +38,7 @@ void
 initializePredictor()
 {
   // Call init based on prediction algorithm
-  switch (predictorType) {
+  switch (predictor_type) {
     case STATIC: break;
     case GSHARE: init_gshare(); break;
     case TOURNAMENT: init_tournament(); break;
@@ -56,13 +56,13 @@ uint8_t
 makePrediction(uint32_t pc)
 {
   // Make a prediction based on the bpType
-  switch (predictorType) {
+  switch (predictor_type) {
     case STATIC:
       return TAKEN; break;
     case GSHARE: 
-      return get_gshare_pred(pc); break;
+      return get_gshare_prediction(pc); break;
     case TOURNAMENT: 
-      return get_tournament_pred(pc); break;
+      return get_tournament_prediction(pc); break;
     case CUSTOM: 
       return get_perceptron_pred(pc); break;
     default:
@@ -81,7 +81,7 @@ void
 trainPredictor(uint32_t pc, uint8_t outcome)
 {
   // Call trainer based on prediction algorithm
-  switch (predictorType) {
+  switch (predictor_type) {
     case STATIC: break;
     case GSHARE: train_gshare(pc, outcome); break;
     case TOURNAMENT: train_tournament(pc, outcome); break;
