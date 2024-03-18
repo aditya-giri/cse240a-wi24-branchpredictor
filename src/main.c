@@ -36,9 +36,9 @@ int handle_option(char *arg) {
     } else if (!strncmp(arg,"--tournament:",13)) {
         predictorType= TOURNAMENT;
         sscanf(arg+13,"%d:%d:%d", &globalHistoryBits, &localHistoryBits, &pcIndexBits);
-    } else if (!strncmp(arg,"--custom:", 9)) {
+    } else if (!strncmp(arg,"--custom", 8)) {
         predictorType= CUSTOM;
-        sscanf(arg+9,"%d:%d:%d:%d", &weight_bit_limit, &num_weights_bits, &perceptron_table_length_bits, &perceptron_theta);
+        // sscanf(arg+9,"%d:%d:%d:%d", &weight_bit_limit, &num_weights_bits, &perceptron_table_length_bits, &perceptron_theta);
     } else if (!strcmp(arg,"--verbose")) {
         verbosity = 1;
     } else {
