@@ -1,52 +1,31 @@
-make clean
-make
-echo "Begin"
-echo "int_1:" >> res.txt
-echo "Gshare:" >> res.txt
-bunzip2 -kc ../traces/int_1.bz2 | ./predictor --gshare:13 >> res.txt
-echo "Tournament:" >> res.txt
-bunzip2 -kc ../traces/int_1.bz2 | ./predictor --tournament:9:10:10 >> res.txt
-echo "Custom:" >> res.txt
-bunzip2 -kc ../traces/int_1.bz2 | ./predictor --custom >> res.txt
-echo "======" >> res.txt
-echo "int_2:" >> res.txt
-echo "Gshare:" >> res.txt
-bunzip2 -kc ../traces/int_2.bz2 | ./predictor --gshare:13 >> res.txt
-echo "Tournament:" >> res.txt
-bunzip2 -kc ../traces/int_2.bz2 | ./predictor --tournament:9:10:10 >> res.txt
-echo "Custom:" >> res.txt
-bunzip2 -kc ../traces/int_2.bz2 | ./predictor --custom >> res.txt
-echo "======" >> res.txt
-echo "fp_1:" >> res.txt
-echo "Gshare:" >> res.txt
-bunzip2 -kc ../traces/fp_1.bz2 | ./predictor --gshare:13 >> res.txt
-echo "Tournament:" >> res.txt
-bunzip2 -kc ../traces/fp_1.bz2 | ./predictor --tournament:9:10:10 >> res.txt
-echo "Custom:" >> res.txt
-bunzip2 -kc ../traces/fp_1.bz2 | ./predictor --custom >> res.txt
-echo "======" >> res.txt
-echo "fp_2:" >> res.txt
-echo "Gshare:" >> res.txt
-bunzip2 -kc ../traces/fp_2.bz2 | ./predictor --gshare:13 >> res.txt
-echo "Tournament:" >> res.txt
-bunzip2 -kc ../traces/fp_2.bz2 | ./predictor --tournament:9:10:10 >> res.txt
-echo "Custom:" >> res.txt
-bunzip2 -kc ../traces/fp_2.bz2 | ./predictor --custom >> res.txt
-echo "======" >> res.txt
-echo "mm_1:" >> res.txt
-echo "Gshare:" >> res.txt
-bunzip2 -kc ../traces/mm_1.bz2 | ./predictor --gshare:13 >> res.txt
-echo "Tournament:" >> res.txt
-bunzip2 -kc ../traces/mm_1.bz2 | ./predictor --tournament:9:10:10 >> res.txt
-echo "Custom:" >> res.txt
-bunzip2 -kc ../traces/mm_1.bz2 | ./predictor --custom >> res.txt
-echo "======" >> res.txt
-echo "mm_2:" >> res.txt
-echo "Gshare:" >> res.txt
-bunzip2 -kc ../traces/mm_2.bz2 | ./predictor --gshare:13 >> res.txt
-echo "Tournament:" >> res.txt
-bunzip2 -kc ../traces/mm_2.bz2 | ./predictor --tournament:9:10:10 >> res.txt
-echo "Custom:" >> res.txt
-bunzip2 -kc ../traces/mm_2.bz2 | ./predictor --custom >> res.txt
-echo "======" >> res.txt
-echo "DONE"
+#!/bin/bash
+
+# Define output file
+output_file="../report/combined_results.txt"
+
+# List of trace files
+traces=("int_1.bz2" "int_2.bz2" "fp_1.bz2" "fp_2.bz2" "mm_1.bz2" "mm_2.bz2")
+
+# List of predictor types
+predictors=("Gshare" "Tournament" "Custom")
+
+echo "Evaluating all predictors on all traces..."
+
+# Loop through trace files
+for trace in "${traces[@]}"; do
+    echo "$trace:" >> "$output_file"
+    # Loop through predictor types
+    for predictor in "${predictors[@]}"; do
+        echo "$predictor:" >> "$output_file"
+        # Run the command with the current trace file and predictor type
+        if [ "$predictor" == "Gshare" ]; then
+            bunzip2 -kc "../traces/$trace" | ./predictor --gshare:13 >> "$output_file"
+        elif [ "$predictor" == "Tournament" ]; then
+            bunzip2 -kc "../traces/$trace" | ./predictor --tournament:9:10:10 >> "$output_file"
+        elif [ "$predictor" == "Custom" ]; then
+            bunzip2 -kc "../traces/$trace" | ./predictor --custom >> "$output_file"
+        fi
+    done
+    echo "======" >> "$output_file"
+done
+echo "Execution completed. Output written to $output_file."

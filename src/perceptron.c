@@ -17,9 +17,6 @@ uint8_t p_recent_prediction = NOTTAKEN;
 uint8_t p_need_train = 0;
 
 
-
-//======================Perceptron Predictor==================================
-
 void perceptron_shift(int16_t* satuate, uint8_t same){
   if(same){
     if(*satuate != ((1 << (p_SATUATELEN - 1)) - 1)){
@@ -33,8 +30,7 @@ void perceptron_shift(int16_t* satuate, uint8_t same){
 }
 
 void init_perceptron(){
-  //printf("percep: PC_size: %d\theight: %d\tsatuate_len: %d\n", p_PCSIZE, p_HEIGHT, p_SATUATELEN);
-  p_train_theta = (int32_t)(1.93 * p_HEIGHT + 14);
+  p_train_theta = perceptron_theta == DEFAULT_PERCEPTRON_THETA ? (int32_t)(1.93 * p_HEIGHT + 14): perceptron_theta;
   memset(p_W, 0, sizeof(int16_t) * p_PCSIZE * (p_HEIGHT));
   memset(p_gHistory, 0, sizeof(uint16_t) * p_HEIGHT);
 }
