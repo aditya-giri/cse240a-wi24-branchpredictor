@@ -60,9 +60,9 @@ makePrediction(uint32_t pc)
     case STATIC:
       return TAKEN; break;
     case GSHARE: 
-      return get_gshare_pred(pc); break;
+      return get_gshare_prediction(pc); break;
     case TOURNAMENT: 
-      return get_tournament_pred(pc); break;
+      return get_tournament_prediction(pc); break;
     case CUSTOM: 
       return get_perceptron_pred(pc); break;
     default:
