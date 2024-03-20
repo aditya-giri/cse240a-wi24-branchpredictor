@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define output file
-output_file="perceptron_hpo.txt"
-
+output_file="../report/perceptron_hpo.txt"
+> "$output_file"
 # List of trace files
 traces=("int_1.bz2" "int_2.bz2" "fp_1.bz2" "fp_2.bz2" "mm_1.bz2" "mm_2.bz2")
 
