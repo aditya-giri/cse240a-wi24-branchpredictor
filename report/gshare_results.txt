@@ -1,24 +1,372 @@
+int_1.bz2:
+Gshare_9:
+GHB: 9
+Branches:           3771697
+Incorrect:           984936
+Misprediction Rate:  26.114
+Gshare_10:
+GHB: 10
+Branches:           3771697
+Incorrect:           830671
+Misprediction Rate:  22.024
+Gshare_11,:
+GHB: 11
+Branches:           3771697
+Incorrect:           718487
+Misprediction Rate:  19.049
+Gshare_12:
+GHB: 12
+Branches:           3771697
+Incorrect:           610680
+Misprediction Rate:  16.191
+Gshare_13:
 GHB: 13
 Branches:           3771697
 Incorrect:           521958
 Misprediction Rate:  13.839
+Gshare_14:
+GHB: 14
+Branches:           3771697
+Incorrect:           460107
+Misprediction Rate:  12.199
+Gshare_15:
+GHB: 15
+Branches:           3771697
+Incorrect:           423190
+Misprediction Rate:  11.220
+Gshare_16:
+GHB: 16
+Branches:           3771697
+Incorrect:           442640
+Misprediction Rate:  11.736
+Gshare_17:
+GHB: 17
+Branches:           3771697
+Incorrect:           335892
+Misprediction Rate:   8.906
+Gshare_18:
+GHB: 18
+Branches:           3771697
+Incorrect:           325420
+Misprediction Rate:   8.628
+Gshare_19:
+GHB: 19
+Branches:           3771697
+Incorrect:           319621
+Misprediction Rate:   8.474
+Gshare_20:
+GHB: 20
+Branches:           3771697
+Incorrect:           308220
+Misprediction Rate:   8.172
+======
+int_2.bz2:
+Gshare_9,:
+GHB: 9
+Branches:           3755315
+Incorrect:            36354
+Misprediction Rate:   0.968
+Gshare_10,:
+GHB: 10
+Branches:           3755315
+Incorrect:            27551
+Misprediction Rate:   0.734
+Gshare_11,:
+GHB: 11
+Branches:           3755315
+Incorrect:            21875
+Misprediction Rate:   0.583
+Gshare_12,:
+GHB: 12
+Branches:           3755315
+Incorrect:            18638
+Misprediction Rate:   0.496
+Gshare_13:
 GHB: 13
 Branches:           3755315
 Incorrect:            15776
 Misprediction Rate:   0.420
+Gshare_14:
+GHB: 14
+Branches:           3755315
+Incorrect:            15071
+Misprediction Rate:   0.401
+Gshare_15:
+GHB: 15
+Branches:           3755315
+Incorrect:            13678
+Misprediction Rate:   0.364
+Gshare_16:
+GHB: 16
+Branches:           3755315
+Incorrect:            13364
+Misprediction Rate:   0.356
+Gshare_17:
+GHB: 17
+Branches:           3755315
+Incorrect:            12554
+Misprediction Rate:   0.334
+Gshare_18:
+GHB: 18
+Branches:           3755315
+Incorrect:            12091
+Misprediction Rate:   0.322
+Gshare_19:
+GHB: 19
+Branches:           3755315
+Incorrect:            12175
+Misprediction Rate:   0.324
+Gshare_20:
+GHB: 20
+Branches:           3755315
+Incorrect:            12001
+Misprediction Rate:   0.320
+======
+fp_1.bz2:
+Gshare_9,:
+GHB: 9
+Branches:           1546797
+Incorrect:            22681
+Misprediction Rate:   1.466
+Gshare_10,:
+GHB: 10
+Branches:           1546797
+Incorrect:            18865
+Misprediction Rate:   1.220
+Gshare_11,:
+GHB: 11
+Branches:           1546797
+Incorrect:            18153
+Misprediction Rate:   1.174
+Gshare_12,:
+GHB: 12
+Branches:           1546797
+Incorrect:            15452
+Misprediction Rate:   0.999
+Gshare_13:
 GHB: 13
 Branches:           1546797
 Incorrect:            12765
 Misprediction Rate:   0.825
+Gshare_14:
+GHB: 14
+Branches:           1546797
+Incorrect:            12770
+Misprediction Rate:   0.826
+Gshare_15:
+GHB: 15
+Branches:           1546797
+Incorrect:            12789
+Misprediction Rate:   0.827
+Gshare_16:
+GHB: 16
+Branches:           1546797
+Incorrect:            12810
+Misprediction Rate:   0.828
+Gshare_17:
+GHB: 17
+Branches:           1546797
+Incorrect:            12834
+Misprediction Rate:   0.830
+Gshare_18:
+GHB: 18
+Branches:           1546797
+Incorrect:            12849
+Misprediction Rate:   0.831
+Gshare_19:
+GHB: 19
+Branches:           1546797
+Incorrect:            12868
+Misprediction Rate:   0.832
+Gshare_20:
+GHB: 20
+Branches:           1546797
+Incorrect:            12893
+Misprediction Rate:   0.834
+======
+fp_2.bz2:
+Gshare_9,:
+GHB: 9
+Branches:           2422049
+Incorrect:           259954
+Misprediction Rate:  10.733
+Gshare_10,:
+GHB: 10
+Branches:           2422049
+Incorrect:           148486
+Misprediction Rate:   6.131
+Gshare_11,:
+GHB: 11
+Branches:           2422049
+Incorrect:           130632
+Misprediction Rate:   5.393
+Gshare_12,:
+GHB: 12
+Branches:           2422049
+Incorrect:            81446
+Misprediction Rate:   3.363
+Gshare_13:
 GHB: 13
 Branches:           2422049
 Incorrect:            40641
 Misprediction Rate:   1.678
+Gshare_14:
+GHB: 14
+Branches:           2422049
+Incorrect:            32820
+Misprediction Rate:   1.355
+Gshare_15:
+GHB: 15
+Branches:           2422049
+Incorrect:            23855
+Misprediction Rate:   0.985
+Gshare_16:
+GHB: 16
+Branches:           2422049
+Incorrect:            27804
+Misprediction Rate:   1.148
+Gshare_17:
+GHB: 17
+Branches:           2422049
+Incorrect:            27807
+Misprediction Rate:   1.148
+Gshare_18:
+GHB: 18
+Branches:           2422049
+Incorrect:            27814
+Misprediction Rate:   1.148
+Gshare_19:
+GHB: 19
+Branches:           2422049
+Incorrect:            27822
+Misprediction Rate:   1.149
+Gshare_20:
+GHB: 20
+Branches:           2422049
+Incorrect:            27829
+Misprediction Rate:   1.149
+======
+mm_1.bz2:
+Gshare_9,:
+GHB: 9
+Branches:           3014850
+Incorrect:           501858
+Misprediction Rate:  16.646
+Gshare_10,:
+GHB: 10
+Branches:           3014850
+Incorrect:           395065
+Misprediction Rate:  13.104
+Gshare_11,:
+GHB: 11
+Branches:           3014850
+Incorrect:           298194
+Misprediction Rate:   9.891
+Gshare_12,:
+GHB: 12
+Branches:           3014850
+Incorrect:           237693
+Misprediction Rate:   7.884
+Gshare_13:
 GHB: 13
 Branches:           3014850
 Incorrect:           201871
 Misprediction Rate:   6.696
+Gshare_14:
+GHB: 14
+Branches:           3014850
+Incorrect:           160795
+Misprediction Rate:   5.333
+Gshare_15:
+GHB: 15
+Branches:           3014850
+Incorrect:           133899
+Misprediction Rate:   4.441
+Gshare_16:
+GHB: 16
+Branches:           3014850
+Incorrect:           124933
+Misprediction Rate:   4.144
+Gshare_17:
+GHB: 17
+Branches:           3014850
+Incorrect:           123916
+Misprediction Rate:   4.110
+Gshare_18:
+GHB: 18
+Branches:           3014850
+Incorrect:           123701
+Misprediction Rate:   4.103
+Gshare_19:
+GHB: 19
+Branches:           3014850
+Incorrect:           102307
+Misprediction Rate:   3.393
+Gshare_20:
+GHB: 20
+Branches:           3014850
+Incorrect:           104883
+Misprediction Rate:   3.479
+======
+mm_2.bz2:
+Gshare_9,:
+GHB: 9
+Branches:           2563897
+Incorrect:           388610
+Misprediction Rate:  15.157
+Gshare_10,:
+GHB: 10
+Branches:           2563897
+Incorrect:           341369
+Misprediction Rate:  13.314
+Gshare_11,:
+GHB: 11
+Branches:           2563897
+Incorrect:           305415
+Misprediction Rate:  11.912
+Gshare_12,:
+GHB: 12
+Branches:           2563897
+Incorrect:           280387
+Misprediction Rate:  10.936
+Gshare_13:
 GHB: 13
 Branches:           2563897
 Incorrect:           259929
 Misprediction Rate:  10.138
+Gshare_14:
+GHB: 14
+Branches:           2563897
+Incorrect:           233162
+Misprediction Rate:   9.094
+Gshare_15:
+GHB: 15
+Branches:           2563897
+Incorrect:           206100
+Misprediction Rate:   8.039
+Gshare_16:
+GHB: 16
+Branches:           2563897
+Incorrect:           183851
+Misprediction Rate:   7.171
+Gshare_17:
+GHB: 17
+Branches:           2563897
+Incorrect:           168569
+Misprediction Rate:   6.575
+Gshare_18:
+GHB: 18
+Branches:           2563897
+Incorrect:           158323
+Misprediction Rate:   6.175
+Gshare_19:
+GHB: 19
+Branches:           2563897
+Incorrect:           152945
+Misprediction Rate:   5.965
+Gshare_20:
+GHB: 20
+Branches:           2563897
+Incorrect:           150637
+Misprediction Rate:   5.875
+======

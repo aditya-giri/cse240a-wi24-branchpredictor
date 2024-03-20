@@ -12,5 +12,3 @@ predictor.o: predictor.h predictor.c
 
 clean:
 	rm -f *.o predictor;
-	rm -f res.txt;
-	rm -f perceptron_hpo.txt;

@@ -1,36 +1,684 @@
+int_1.bz2:
+Tournament_5:6:6:
+GHB: 5
+PIB: 6
+LHB: 6
+Branches:           3771697
+Incorrect:          1049775
+Misprediction Rate:  27.833
+Tournament_6:7:7:
+GHB: 6
+PIB: 7
+LHB: 7
+Branches:           3771697
+Incorrect:           889472
+Misprediction Rate:  23.583
+Tournament_7:8:8:
+GHB: 7
+PIB: 8
+LHB: 8
+Branches:           3771697
+Incorrect:           726594
+Misprediction Rate:  19.264
+Tournament_8:9:9:
+GHB: 8
+PIB: 9
+LHB: 9
+Branches:           3771697
+Incorrect:           564112
+Misprediction Rate:  14.956
+Tournament_9:10:10:
 GHB: 9
 PIB: 10
 LHB: 10
 Branches:           3771697
 Incorrect:           476073
 Misprediction Rate:  12.622
+Tournament_10:11:11:
+GHB: 10
+PIB: 11
+LHB: 11
+Branches:           3771697
+Incorrect:           414836
+Misprediction Rate:  10.999
+Tournament_11:12:12:
+GHB: 11
+PIB: 12
+LHB: 12
+Branches:           3771697
+Incorrect:           383636
+Misprediction Rate:  10.171
+Tournament_12:13:13:
+GHB: 12
+PIB: 13
+LHB: 13
+Branches:           3771697
+Incorrect:           362601
+Misprediction Rate:   9.614
+Tournament_13:14:14:
+GHB: 13
+PIB: 14
+LHB: 14
+Branches:           3771697
+Incorrect:           345966
+Misprediction Rate:   9.173
+Tournament_14:15:15:
+GHB: 14
+PIB: 15
+LHB: 15
+Branches:           3771697
+Incorrect:           335160
+Misprediction Rate:   8.886
+Tournament_15:16:16:
+GHB: 15
+PIB: 16
+LHB: 16
+Branches:           3771697
+Incorrect:           326330
+Misprediction Rate:   8.652
+Tournament_16:17:17:
+GHB: 16
+PIB: 17
+LHB: 17
+Branches:           3771697
+Incorrect:           290799
+Misprediction Rate:   7.710
+Tournament_17:18:18:
+GHB: 17
+PIB: 18
+LHB: 18
+Branches:           3771697
+Incorrect:           268035
+Misprediction Rate:   7.106
+Tournament_18:19:19:
+GHB: 18
+PIB: 19
+LHB: 19
+Branches:           3771697
+Incorrect:           262993
+Misprediction Rate:   6.973
+Tournament_19:20:20:
+GHB: 19
+PIB: 20
+LHB: 20
+Branches:           3771697
+Incorrect:           259100
+Misprediction Rate:   6.870
+Tournament_20:21:21:
+GHB: 20
+PIB: 21
+LHB: 21
+Branches:           3771697
+Incorrect:           255671
+Misprediction Rate:   6.779
+======
+int_2.bz2:
+Tournament_5:6:6:
+GHB: 5
+PIB: 6
+LHB: 6
+Branches:           3755315
+Incorrect:            40588
+Misprediction Rate:   1.081
+Tournament_6:7:7:
+GHB: 6
+PIB: 7
+LHB: 7
+Branches:           3755315
+Incorrect:            30691
+Misprediction Rate:   0.817
+Tournament_7:8:8:
+GHB: 7
+PIB: 8
+LHB: 8
+Branches:           3755315
+Incorrect:            21915
+Misprediction Rate:   0.584
+Tournament_8:9:9:
+GHB: 8
+PIB: 9
+LHB: 9
+Branches:           3755315
+Incorrect:            17771
+Misprediction Rate:   0.473
+Tournament_9:10:10:
 GHB: 9
 PIB: 10
 LHB: 10
 Branches:           3755315
 Incorrect:            15980
 Misprediction Rate:   0.426
+Tournament_10:11:11:
+GHB: 10
+PIB: 11
+LHB: 11
+Branches:           3755315
+Incorrect:            13954
+Misprediction Rate:   0.372
+Tournament_11:12:12:
+GHB: 11
+PIB: 12
+LHB: 12
+Branches:           3755315
+Incorrect:            12511
+Misprediction Rate:   0.333
+Tournament_12:13:13:
+GHB: 12
+PIB: 13
+LHB: 13
+Branches:           3755315
+Incorrect:            12200
+Misprediction Rate:   0.325
+Tournament_13:14:14:
+GHB: 13
+PIB: 14
+LHB: 14
+Branches:           3755315
+Incorrect:            11163
+Misprediction Rate:   0.297
+Tournament_14:15:15:
+GHB: 14
+PIB: 15
+LHB: 15
+Branches:           3755315
+Incorrect:            10878
+Misprediction Rate:   0.290
+Tournament_15:16:16:
+GHB: 15
+PIB: 16
+LHB: 16
+Branches:           3755315
+Incorrect:            10618
+Misprediction Rate:   0.283
+Tournament_16:17:17:
+GHB: 16
+PIB: 17
+LHB: 17
+Branches:           3755315
+Incorrect:            10276
+Misprediction Rate:   0.274
+Tournament_17:18:18:
+GHB: 17
+PIB: 18
+LHB: 18
+Branches:           3755315
+Incorrect:            10099
+Misprediction Rate:   0.269
+Tournament_18:19:19:
+GHB: 18
+PIB: 19
+LHB: 19
+Branches:           3755315
+Incorrect:             9980
+Misprediction Rate:   0.266
+Tournament_19:20:20:
+GHB: 19
+PIB: 20
+LHB: 20
+Branches:           3755315
+Incorrect:             9809
+Misprediction Rate:   0.261
+Tournament_20:21:21:
+GHB: 20
+PIB: 21
+LHB: 21
+Branches:           3755315
+Incorrect:             9716
+Misprediction Rate:   0.259
+======
+fp_1.bz2:
+Tournament_5:6:6:
+GHB: 5
+PIB: 6
+LHB: 6
+Branches:           1546797
+Incorrect:            26805
+Misprediction Rate:   1.733
+Tournament_6:7:7:
+GHB: 6
+PIB: 7
+LHB: 7
+Branches:           1546797
+Incorrect:            22884
+Misprediction Rate:   1.479
+Tournament_7:8:8:
+GHB: 7
+PIB: 8
+LHB: 8
+Branches:           1546797
+Incorrect:            15424
+Misprediction Rate:   0.997
+Tournament_8:9:9:
+GHB: 8
+PIB: 9
+LHB: 9
+Branches:           1546797
+Incorrect:            15348
+Misprediction Rate:   0.992
+Tournament_9:10:10:
 GHB: 9
 PIB: 10
 LHB: 10
 Branches:           1546797
 Incorrect:            15329
 Misprediction Rate:   0.991
+Tournament_10:11:11:
+GHB: 10
+PIB: 11
+LHB: 11
+Branches:           1546797
+Incorrect:            15313
+Misprediction Rate:   0.990
+Tournament_11:12:12:
+GHB: 11
+PIB: 12
+LHB: 12
+Branches:           1546797
+Incorrect:            15313
+Misprediction Rate:   0.990
+Tournament_12:13:13:
+GHB: 12
+PIB: 13
+LHB: 13
+Branches:           1546797
+Incorrect:            15333
+Misprediction Rate:   0.991
+Tournament_13:14:14:
+GHB: 13
+PIB: 14
+LHB: 14
+Branches:           1546797
+Incorrect:            15349
+Misprediction Rate:   0.992
+Tournament_14:15:15:
+GHB: 14
+PIB: 15
+LHB: 15
+Branches:           1546797
+Incorrect:            15365
+Misprediction Rate:   0.993
+Tournament_15:16:16:
+GHB: 15
+PIB: 16
+LHB: 16
+Branches:           1546797
+Incorrect:            15388
+Misprediction Rate:   0.995
+Tournament_16:17:17:
+GHB: 16
+PIB: 17
+LHB: 17
+Branches:           1546797
+Incorrect:            14073
+Misprediction Rate:   0.910
+Tournament_17:18:18:
+GHB: 17
+PIB: 18
+LHB: 18
+Branches:           1546797
+Incorrect:            12760
+Misprediction Rate:   0.825
+Tournament_18:19:19:
+GHB: 18
+PIB: 19
+LHB: 19
+Branches:           1546797
+Incorrect:            12776
+Misprediction Rate:   0.826
+Tournament_19:20:20:
+GHB: 19
+PIB: 20
+LHB: 20
+Branches:           1546797
+Incorrect:            12789
+Misprediction Rate:   0.827
+Tournament_20:21:21:
+GHB: 20
+PIB: 21
+LHB: 21
+Branches:           1546797
+Incorrect:            12809
+Misprediction Rate:   0.828
+======
+fp_2.bz2:
+Tournament_5:6:6:
+GHB: 5
+PIB: 6
+LHB: 6
+Branches:           2422049
+Incorrect:           139994
+Misprediction Rate:   5.780
+Tournament_6:7:7:
+GHB: 6
+PIB: 7
+LHB: 7
+Branches:           2422049
+Incorrect:           130336
+Misprediction Rate:   5.381
+Tournament_7:8:8:
+GHB: 7
+PIB: 8
+LHB: 8
+Branches:           2422049
+Incorrect:            97085
+Misprediction Rate:   4.008
+Tournament_8:9:9:
+GHB: 8
+PIB: 9
+LHB: 9
+Branches:           2422049
+Incorrect:            74684
+Misprediction Rate:   3.084
+Tournament_9:10:10:
 GHB: 9
 PIB: 10
 LHB: 10
 Branches:           2422049
 Incorrect:            78619
 Misprediction Rate:   3.246
+Tournament_10:11:11:
+GHB: 10
+PIB: 11
+LHB: 11
+Branches:           2422049
+Incorrect:            60119
+Misprediction Rate:   2.482
+Tournament_11:12:12:
+GHB: 11
+PIB: 12
+LHB: 12
+Branches:           2422049
+Incorrect:             9933
+Misprediction Rate:   0.410
+Tournament_12:13:13:
+GHB: 12
+PIB: 13
+LHB: 13
+Branches:           2422049
+Incorrect:             9949
+Misprediction Rate:   0.411
+Tournament_13:14:14:
+GHB: 13
+PIB: 14
+LHB: 14
+Branches:           2422049
+Incorrect:             9968
+Misprediction Rate:   0.412
+Tournament_14:15:15:
+GHB: 14
+PIB: 15
+LHB: 15
+Branches:           2422049
+Incorrect:             9984
+Misprediction Rate:   0.412
+Tournament_15:16:16:
+GHB: 15
+PIB: 16
+LHB: 16
+Branches:           2422049
+Incorrect:             9445
+Misprediction Rate:   0.390
+Tournament_16:17:17:
+GHB: 16
+PIB: 17
+LHB: 17
+Branches:           2422049
+Incorrect:             9457
+Misprediction Rate:   0.390
+Tournament_17:18:18:
+GHB: 17
+PIB: 18
+LHB: 18
+Branches:           2422049
+Incorrect:             9450
+Misprediction Rate:   0.390
+Tournament_18:19:19:
+GHB: 18
+PIB: 19
+LHB: 19
+Branches:           2422049
+Incorrect:             4932
+Misprediction Rate:   0.204
+Tournament_19:20:20:
+GHB: 19
+PIB: 20
+LHB: 20
+Branches:           2422049
+Incorrect:             4939
+Misprediction Rate:   0.204
+Tournament_20:21:21:
+GHB: 20
+PIB: 21
+LHB: 21
+Branches:           2422049
+Incorrect:             4948
+Misprediction Rate:   0.204
+======
+mm_1.bz2:
+Tournament_5:6:6:
+GHB: 5
+PIB: 6
+LHB: 6
+Branches:           3014850
+Incorrect:           685162
+Misprediction Rate:  22.726
+Tournament_6:7:7:
+GHB: 6
+PIB: 7
+LHB: 7
+Branches:           3014850
+Incorrect:           518877
+Misprediction Rate:  17.211
+Tournament_7:8:8:
+GHB: 7
+PIB: 8
+LHB: 8
+Branches:           3014850
+Incorrect:           329533
+Misprediction Rate:  10.930
+Tournament_8:9:9:
+GHB: 8
+PIB: 9
+LHB: 9
+Branches:           3014850
+Incorrect:           188341
+Misprediction Rate:   6.247
+Tournament_9:10:10:
 GHB: 9
 PIB: 10
 LHB: 10
 Branches:           3014850
 Incorrect:            77802
 Misprediction Rate:   2.581
+Tournament_10:11:11:
+GHB: 10
+PIB: 11
+LHB: 11
+Branches:           3014850
+Incorrect:            51493
+Misprediction Rate:   1.708
+Tournament_11:12:12:
+GHB: 11
+PIB: 12
+LHB: 12
+Branches:           3014850
+Incorrect:            32307
+Misprediction Rate:   1.072
+Tournament_12:13:13:
+GHB: 12
+PIB: 13
+LHB: 13
+Branches:           3014850
+Incorrect:            27855
+Misprediction Rate:   0.924
+Tournament_13:14:14:
+GHB: 13
+PIB: 14
+LHB: 14
+Branches:           3014850
+Incorrect:            18602
+Misprediction Rate:   0.617
+Tournament_14:15:15:
+GHB: 14
+PIB: 15
+LHB: 15
+Branches:           3014850
+Incorrect:            15017
+Misprediction Rate:   0.498
+Tournament_15:16:16:
+GHB: 15
+PIB: 16
+LHB: 16
+Branches:           3014850
+Incorrect:            12734
+Misprediction Rate:   0.422
+Tournament_16:17:17:
+GHB: 16
+PIB: 17
+LHB: 17
+Branches:           3014850
+Incorrect:            11508
+Misprediction Rate:   0.382
+Tournament_17:18:18:
+GHB: 17
+PIB: 18
+LHB: 18
+Branches:           3014850
+Incorrect:             8637
+Misprediction Rate:   0.286
+Tournament_18:19:19:
+GHB: 18
+PIB: 19
+LHB: 19
+Branches:           3014850
+Incorrect:             8648
+Misprediction Rate:   0.287
+Tournament_19:20:20:
+GHB: 19
+PIB: 20
+LHB: 20
+Branches:           3014850
+Incorrect:             8118
+Misprediction Rate:   0.269
+Tournament_20:21:21:
+GHB: 20
+PIB: 21
+LHB: 21
+Branches:           3014850
+Incorrect:             8163
+Misprediction Rate:   0.271
+======
+mm_2.bz2:
+Tournament_5:6:6:
+GHB: 5
+PIB: 6
+LHB: 6
+Branches:           2563897
+Incorrect:           455547
+Misprediction Rate:  17.768
+Tournament_6:7:7:
+GHB: 6
+PIB: 7
+LHB: 7
+Branches:           2563897
+Incorrect:           378215
+Misprediction Rate:  14.752
+Tournament_7:8:8:
+GHB: 7
+PIB: 8
+LHB: 8
+Branches:           2563897
+Incorrect:           304559
+Misprediction Rate:  11.879
+Tournament_8:9:9:
+GHB: 8
+PIB: 9
+LHB: 9
+Branches:           2563897
+Incorrect:           256607
+Misprediction Rate:  10.008
+Tournament_9:10:10:
 GHB: 9
 PIB: 10
 LHB: 10
 Branches:           2563897
 Incorrect:           217501
 Misprediction Rate:   8.483
+Tournament_10:11:11:
+GHB: 10
+PIB: 11
+LHB: 11
+Branches:           2563897
+Incorrect:           194345
+Misprediction Rate:   7.580
+Tournament_11:12:12:
+GHB: 11
+PIB: 12
+LHB: 12
+Branches:           2563897
+Incorrect:           178621
+Misprediction Rate:   6.967
+Tournament_12:13:13:
+GHB: 12
+PIB: 13
+LHB: 13
+Branches:           2563897
+Incorrect:           164213
+Misprediction Rate:   6.405
+Tournament_13:14:14:
+GHB: 13
+PIB: 14
+LHB: 14
+Branches:           2563897
+Incorrect:           150323
+Misprediction Rate:   5.863
+Tournament_14:15:15:
+GHB: 14
+PIB: 15
+LHB: 15
+Branches:           2563897
+Incorrect:           139498
+Misprediction Rate:   5.441
+Tournament_15:16:16:
+GHB: 15
+PIB: 16
+LHB: 16
+Branches:           2563897
+Incorrect:           130687
+Misprediction Rate:   5.097
+Tournament_16:17:17:
+GHB: 16
+PIB: 17
+LHB: 17
+Branches:           2563897
+Incorrect:           125989
+Misprediction Rate:   4.914
+Tournament_17:18:18:
+GHB: 17
+PIB: 18
+LHB: 18
+Branches:           2563897
+Incorrect:           124241
+Misprediction Rate:   4.846
+Tournament_18:19:19:
+GHB: 18
+PIB: 19
+LHB: 19
+Branches:           2563897
+Incorrect:           123592
+Misprediction Rate:   4.820
+Tournament_19:20:20:
+GHB: 19
+PIB: 20
+LHB: 20
+Branches:           2563897
+Incorrect:           123920
+Misprediction Rate:   4.833
+Tournament_20:21:21:
+GHB: 20
+PIB: 21
+LHB: 21
+Branches:           2563897
+Incorrect:           125644
+Misprediction Rate:   4.901
+======
