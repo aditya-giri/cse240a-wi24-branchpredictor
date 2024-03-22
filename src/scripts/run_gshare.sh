@@ -7,7 +7,7 @@ output_file="../../report/gshare_results.txt"
 traces=("int_1.bz2" "int_2.bz2" "fp_1.bz2" "fp_2.bz2" "mm_1.bz2" "mm_2.bz2")
 
 # List of gshare configurations
-gshare_configs=(9, 10, 11, 12, 13 14 15 16 17 18 19 20)
+gshare_configs=(9 10 11 12 13 14 15 16 17 18 19 20)
 
 echo "Evaluating Gshare predictor on all traces..."
 
