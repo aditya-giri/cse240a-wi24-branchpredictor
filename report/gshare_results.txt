@@ -1,10 +1,10 @@
 int_1.bz2:
-Gshare_9:
+Gshare_9,:
 GHB: 9
 Branches:           3771697
 Incorrect:           984936
 Misprediction Rate:  26.114
-Gshare_10:
+Gshare_10,:
 GHB: 10
 Branches:           3771697
 Incorrect:           830671
@@ -14,7 +14,7 @@ GHB: 11
 Branches:           3771697
 Incorrect:           718487
 Misprediction Rate:  19.049
-Gshare_12:
+Gshare_12,:
 GHB: 12
 Branches:           3771697
 Incorrect:           610680

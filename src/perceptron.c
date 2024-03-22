@@ -2,71 +2,70 @@
 #include <string.h>
 #include <math.h>
 
-// Data for perceptron predictor
+#define HEIGHT 32
+#define LEN_SATURATE 8
+#define PC_SIZE 256
 
-#define p_PCSIZE 256
-#define p_HEIGHT 32
-#define p_SATUATELEN 8
+#define PC_MASK(x) ((x * 19) % PC_SIZE)
 
-#define p_MASK_PC(x) ((x * 19) % p_PCSIZE)
+int32_t theta;
+uint8_t train_required = 0;
+uint8_t recent_pred = NOTTAKEN;
 
-int16_t p_W[p_PCSIZE][p_HEIGHT];
-int16_t p_gHistory[p_HEIGHT];
-int32_t p_train_theta;
-uint8_t p_recent_prediction = NOTTAKEN;
-uint8_t p_need_train = 0;
+int16_t gHistory_table[HEIGHT];
+int16_t weights_table[PC_SIZE][HEIGHT];
 
 
-void perceptron_shift(int16_t* satuate, uint8_t same){
-  if(same){
-    if(*satuate != ((1 << (p_SATUATELEN - 1)) - 1)){
-      (*satuate)++;
+void perceptron_shift(int16_t* saturation, uint8_t flag){
+  if(flag){
+    if(*saturation != ((1 << (LEN_SATURATE - 1)) - 1)){
+      (*saturation)++;
     }
   }else{
-    if(*satuate != -(1 << (p_SATUATELEN - 1 ) )){
-      (*satuate)--;
+    if(*saturation != -(1 << (LEN_SATURATE - 1 ) )){
+      (*saturation)--;
     }
   }
 }
 
 void init_perceptron(){
-  p_train_theta = perceptron_theta == DEFAULT_PERCEPTRON_THETA ? (int32_t)(1.93 * p_HEIGHT + 14): perceptron_theta;
-  memset(p_W, 0, sizeof(int16_t) * p_PCSIZE * (p_HEIGHT));
-  memset(p_gHistory, 0, sizeof(uint16_t) * p_HEIGHT);
+  theta = perceptron_theta == DEFAULT_PERCEPTRON_THETA ? (int32_t)(1.93 * HEIGHT + 14): perceptron_theta;
+  memset(weights_table, 0, sizeof(int16_t) * PC_SIZE * (HEIGHT));
+  memset(gHistory_table, 0, sizeof(uint16_t) * HEIGHT);
 }
 
 
 
 uint8_t get_perceptron_pred(uint32_t pc){
-  uint32_t index = p_MASK_PC(pc);
-  int16_t out = p_W[index][0];
+  uint32_t index = PC_MASK(pc);
+  int16_t out = weights_table[index][0];
 
-  for(int i = 1 ; i <= p_HEIGHT ; i++){
-    out += p_gHistory[i-1] ? p_W[index][i] : -p_W[index][i];
+  for(int i = 1 ; i <= HEIGHT ; i++){
+    out += gHistory_table[i-1] ? weights_table[index][i] : -weights_table[index][i];
   }
 
-  p_recent_prediction = (out >= 0) ? TAKEN : NOTTAKEN;
-  p_need_train = (out < p_train_theta && out > -p_train_theta) ? 1 : 0;
+  recent_pred = (out >= 0) ? TAKEN : NOTTAKEN;
+  train_required = (out < theta && out > -theta) ? 1 : 0;
 
-  return p_recent_prediction;
+  return recent_pred;
 }
 
 void train_perceptron(uint32_t pc, uint8_t outcome){
 
-  uint32_t index = p_MASK_PC(pc);
+  uint32_t index = PC_MASK(pc);
 
-  if((p_recent_prediction != outcome) || p_need_train){
-    perceptron_shift(&(p_W[index][0]), outcome);
-    for(int i = 1 ; i <= p_HEIGHT ; i++){
-      uint8_t predict = p_gHistory[i-1];
-      perceptron_shift(&(p_W[index][i]), (outcome == predict));
+  if((recent_pred != outcome) || train_required){
+    perceptron_shift(&(weights_table[index][0]), outcome);
+    for(int i = 1 ; i <= HEIGHT ; i++){
+      uint8_t prediction = gHistory_table[i-1];
+      perceptron_shift(&(weights_table[index][i]), (outcome == prediction));
     }
 
   }
 
-  for(int i = p_HEIGHT - 1; i > 0 ; i--){
-    p_gHistory[i] = p_gHistory[i-1];
+  for(int i = HEIGHT - 1; i > 0 ; i--){
+    gHistory_table[i] = gHistory_table[i-1];
   }
-  p_gHistory[0] = outcome;
+  gHistory_table[0] = outcome;
 
 }

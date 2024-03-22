@@ -1,6 +1,6 @@
 # CSE 240A Winter 2024 Branch Predictor Project
 
-A Comparative analysis project undertaken as part of the CSE 240A course at UCSD in Winter '2024, evaluating performance of ``Gshare:13``, ``Tournament:9:10:10`` and a custom Perceptron predictor implemented based on the paper [Dynamic Branch Prediction with Perceptrons](https://www.cs.utexas.edu/~lin/papers/hpca01.pdf). Results show the prediction superiority of the implemented custom perceptron predictor over the baselines across all test traces while not excedding the specified memory limits. 
+A Comparative analysis project undertaken as part of the CSE 240A course at UCSD in Winter '2024, evaluating performance of ``Gshare:13``, ``Tournament:9:10:10`` and a custom ``Perceptron predictor`` implemented based on the paper [Dynamic Branch Prediction with Perceptrons](https://www.cs.utexas.edu/~lin/papers/hpca01.pdf). Results show the prediction superiority of the implemented custom perceptron predictor over the baselines across all test traces while not exceeding the specified memory limits. 
 
 # Overview:
 
